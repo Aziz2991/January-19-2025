@@ -5,6 +5,7 @@ box-sizing: border-box;}
 
 body{
     font-family: "Roboto", serif;
+    overflow-x: hidden;
     }
 
     #header{width: 100vw;
@@ -89,16 +90,30 @@ justify-content: center;}
 .about-content p{padding-top:20px;}
 
 #talk-to-us {background-image: url(./Assets/M-08.jpg);background-repeat: no-repeat;
-background-size: cover;min-height: 500px;background-position: center;}
+background-size: cover;min-height: 500px;background-position: center;margin-top:80px;}
 
 .talk-to-us-content{display: flex;
 flex-direction: column;align-items: center;justify-content: center;
 height: 500px;gap:16px;}
 
-.talk-to-us-content p {max-width:500px; color:white;font-size:20px;}
+.talk-to-us-content p {max-width:500px; color:white;font-size:20px;padding:20px 0px;}
+.talk-to-us-content h1{color:white;font-size: 60px;}
 
+footer {display: flex;
+justify-content: space-between;
+margin-top:80px;
+padding:16px 0;
+align-items: center;}
 
+ footer ul { display: flex;
 
+gap:32px;}
+
+.footerlinks li {list-style: none;}
+
+.footerlinks a {text-decoration: none; color:black;font-size: 20px;
+font-weight: bold;}
+footer P {font-size: 20px;font-weight: bold;}
 
 /*Media query*/
 @media only screen and (max-width:520px)
@@ -149,5 +164,12 @@ text-align: right;
 @media only screen and (max-width:600px)
 {
     #about .container img {width:300px; }
+    .talk-to-us-content h1 {font-size: 30px;}
+    .talk-to-us-content p {padding-left:40px;}
+
+    footer {flex-direction: column;
+    align-items: center;
+padding:32px 30px;}
+ .footerlinks {gap:8px;}
 
 }
